@@ -1,0 +1,14 @@
+Test Case ID,Feature,Test Case Name,Preconditions,Steps to Reproduce,Expected Result,Priority,Status (Mock),Notes
+TC_CONTACT_006,Contact,"Message Field - Maximum Length (e.g., 2000 characters)",N/A,"1. Navigate to Contact Us.
+2. Fill Name, Email, Subject.
+3. Enter Message: [2000 'A' characters].
+4. Click 'Submit'. 5. Click OK on alert.",Form submits successfully. Message is received and displayed correctly.,Medium,Pass,BVA: Max Length
+TC_CONTACT_007,Contact,Message Field - Exceeding Max Length,N/A,"1. Navigate to Contact Us.
+2. Fill Name, Email, Subject.
+3. Attempt to enter Message: [2001 'A' characters].
+4. Click 'Submit'.","Input field should prevent typing beyond max length, or display validation error upon submit. Form not submitted.",Medium,Pass,BVA: Max Length Overflow
+TC_CONTACT_008,Contact,Message Field - Special Characters & Emojis,N/A,"1. Navigate to Contact Us.
+2. Fill Name, Email, Subject.
+3. Enter Message: Hello! 👋 This is a test message with special characters: !@#$%^&*()_+-= [] {} | \\ ; : ' "" , . / ? ~.
+4. Click 'Submit'.
+5. Click OK on alert.",Form submits successfully. Message should be handled and displayed correctly in the backend/confirmation.,Medium,Pass,Character Set / Encoding
