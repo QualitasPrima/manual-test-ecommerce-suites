@@ -1,5 +1,16 @@
-Test Case ID;Feature;Test Case Name;Preconditions;Steps to Reproduce;Expected Result;Priority;Status (Mock);Notes
-TC_CART_001;Cart;Add single product to cart from Home Page;Product 'Blue Top' visible on Home Page.;1. Navigate to Home Page. 2. Hover over 'Blue Top'. 3. Click 'Add to cart'. 4. Click 'View Cart' in the pop-up.;'Shopping Cart' page is displayed. 'Blue Top' is listed with Quantity '1' and correct total price.;High;Pass;Basic Add to Cart
-TC_CART_002;Cart;Add multiple units of same product from Product Details Page;Product 'Men Tshirt' exists.;1. Navigate to Home Page. 2. Click 'View Product' for 'Men Tshirt'. 3. On Product Details page, change Quantity to `3`. 4. Click 'Add to cart'. 5. Click 'View Cart'.;'Shopping Cart' page is displayed. 'Men Tshirt' is listed with Quantity '3' and correct total price.;High;Pass;Quantity update on product page
-TC_CART_003;Cart;Increase quantity of item in cart;Product 'Blue Top' in cart with Quantity '1'.;1. Navigate to Shopping Cart page. 2. Locate 'Blue Top'. 3. Click the `+` button next to its quantity.;Quantity updates to '2'. Sub-total and Total price for 'Blue Top' update correctly.;Medium;Pass;In-cart quantity increase
-TC_CART_004;Cart;Remove single item from cart;Product 'Blue Top' in cart.;1. Navigate to Shopping Cart page. 2. Locate 'Blue Top'. 3. Click the 'X' (remove) button next to it.;'Blue Top' is removed from the cart. Cart total updates. If it was the last item, 'Cart is empty!' message is displayed.;High;Pass;Remove item
+Test Case ID,Feature,Test Case Name,Preconditions,Steps to Reproduce,Expected Result,Priority,Status (Mock),Notes
+TC_CART_001,Cart,Add single product to cart from Home Page,Product 'Blue Top' visible on Home Page.,"1. Navigate to Home Page.
+2. Hover over 'Blue Top'.
+3. Click 'Add to cart'.
+4. Click 'View Cart' in the pop-up.",Shopping Cart' page is displayed. 'Blue Top' is listed with Quantity '1' and correct total price.,High,Pass,Basic Add to Cart
+TC_CART_002,Cart,Add multiple units of same product from Product Details Page,Product 'Men Tshirt' exists.,"1. Navigate to Home Page.
+2. Click 'View Product' for 'Men Tshirt'.
+3. On Product Details page, change Quantity to `3`.
+4. Click 'Add to cart'.
+5. Click 'View Cart'.",Shopping Cart' page is displayed. 'Men Tshirt' is listed with Quantity '3' and correct total price.,High,Pass,Quantity update on product page
+TC_CART_003,Cart,Increase quantity of item in cart,Product 'Blue Top' in cart with Quantity '1'.,"1. Navigate to Shopping Cart page.
+2. Locate 'Blue Top'.
+3. Click the `+` button next to its quantity.",Quantity updates to '2'. Sub-total and Total price for 'Blue Top' update correctly.,Medium,Pass,In-cart quantity increase
+TC_CART_004,Cart,Remove single item from cart,Product 'Blue Top' in cart.,"1. Navigate to Shopping Cart page.
+2. Locate 'Blue Top'.
+3. Click the 'X' (remove) button next to it.","Blue Top' is removed from the cart. Cart total updates. If it was the last item, 'Cart is empty!' message is displayed.",High,Pass,Remove item
