@@ -17,7 +17,7 @@ This portfolio is structured to demonstrate a comprehensive manual Quality Assur
 * **Description:** A lightweight test plan outlining the scope, objectives, test strategy, and approach for testing core functionalities of Automation Exercise.
 
 ### 2. Detailed Test Cases
-* **Location:** [`Test_Cases/` directory](https://github.com/QualitasPrima/manual-test-ecommerce-suites/tree/main/Test_Cases) (categorized by module and scenario type)
+* **Location:** [`Test_Cases/`](https://github.com/QualitasPrima/manual-test-ecommerce-suites/tree/main/Test_Cases) (categorized by module and scenario type)
 * **Description:** A collection of meticulously crafted test cases in CSV format, covering various functionalities of the application. Each module's test cases are further broken down into:
     * **Positive Scenarios:** Validating expected system behavior with correct inputs.
     * **Negative Scenarios:** Testing the system's robustness and error handling with invalid or unexpected inputs.
@@ -25,24 +25,24 @@ This portfolio is structured to demonstrate a comprehensive manual Quality Assur
 
     ---
     #### Module: User Registration / Signup
-    * [Positive Scenarios (CSV)](./Test_Cases/Registration/Test_Cases_Registration_Positive.csv)
-    * [Negative Scenarios (CSV)](./Test_Cases/Registration/Test_Cases_Registration_Negative.csv)
-    * [Edge/Boundary Scenarios (CSV)](./Test_Cases/Registration/Test_Cases_Registration_Edge_Boundary.csv)
+    * [Positive Scenarios (CSV)](https://github.com/QualitasPrima/manual-test-ecommerce-suites/blob/main/Test_Cases/User%20Registration/Test_Cases_Registration_Positive.csv)
+    * [Negative Scenarios (CSV)](https://github.com/QualitasPrima/manual-test-ecommerce-suites/blob/main/Test_Cases/User%20Registration/Test_Cases_Registration_Negative.csv)
+    * [Edge/Boundary Scenarios (CSV)](https://github.com/QualitasPrima/manual-test-ecommerce-suites/blob/main/Test_Cases/User%20Registration/Test_Cases_Registration_Positive.csv)
 
     #### Module: Product Search Functionality
-    * [Positive Scenarios (CSV)](./Test_Cases/Product_Search/Test_Cases_Product_Search_Positive.csv)
-    * [Negative Scenarios (CSV)](./Test_Cases/Product_Search/Test_Cases_Product_Search_Negative.csv)
-    * [Edge/Boundary Scenarios (CSV)](./Test_Cases/Product_Search/Test_Cases_Product_Search_Edge_Boundary.csv)
+    * [Positive Scenarios (CSV)](https://github.com/QualitasPrima/manual-test-ecommerce-suites/blob/main/Test_Cases/Product%20Search%20Functionality/Test_Cases_Product_Search_Positive.csv)
+    * [Negative Scenarios (CSV)](https://github.com/QualitasPrima/manual-test-ecommerce-suites/blob/main/Test_Cases/Product%20Search%20Functionality/Test_Cases_Product_Search_Negative.csv)
+    * [Edge/Boundary Scenarios (CSV)](https://github.com/QualitasPrima/manual-test-ecommerce-suites/blob/main/Test_Cases/Product%20Search%20Functionality/Test_Cases_Product_Search_Edge_Boundary.csv)
 
     #### Module: Shopping Cart & Quantity Management
-    * [Positive Scenarios (CSV)](./Test_Cases/Shopping_Cart/Test_Cases_Shopping_Cart_Positive.csv)
-    * [Negative Scenarios (CSV)](./Test_Cases/Shopping_Cart/Test_Cases_Shopping_Cart_Negative.csv)
-    * [Edge/Boundary Scenarios (CSV)](./Test_Cases/Shopping_Cart/Test_Cases_Shopping_Cart_Edge_Boundary.csv)
+    * [Positive Scenarios (CSV)](https://github.com/QualitasPrima/manual-test-ecommerce-suites/blob/main/Test_Cases/Shopping%20Cart%20%26%20Quantity%20Management/Test_Cases_Shopping_Cart_Positive.csv)
+    * [Negative Scenarios (CSV)](https://github.com/QualitasPrima/manual-test-ecommerce-suites/blob/main/Test_Cases/Shopping%20Cart%20%26%20Quantity%20Management/Test_Cases_Shopping_Cart_Negative.csv)
+    * [Edge/Boundary Scenarios (CSV)](https://github.com/QualitasPrima/manual-test-ecommerce-suites/blob/main/Test_Cases/Shopping%20Cart%20%26%20Quantity%20Management/Test_Cases_Shopping_Cart_Edge_Boundary.csv)
 
     #### Module: Contact Us Form
-    * [Positive Scenarios (CSV)](./Test_Cases/Contact_Us/Test_Cases_Contact_Us_Positive.csv)
-    * [Negative Scenarios (CSV)](./Test_Cases/Contact_Us/Test_Cases_Contact_Us_Negative.csv)
-    * [Edge/Boundary Scenarios (CSV)](./Test_Cases/Contact_Us/Test_Cases_Contact_Us_Edge_Boundary.csv)
+    * [Positive Scenarios (CSV)](https://github.com/QualitasPrima/manual-test-ecommerce-suites/blob/main/Test_Cases/Contact%20Us%20Form/Test_Cases_Contact_Us_Positive.csv)
+    * [Negative Scenarios (CSV)](https://github.com/QualitasPrima/manual-test-ecommerce-suites/blob/main/Test_Cases/Contact%20Us%20Form/Test_Cases_Contact_Us_Negative.csv)
+    * [Edge/Boundary Scenarios (CSV)](https://github.com/QualitasPrima/manual-test-ecommerce-suites/blob/main/Test_Cases/Contact%20Us%20Form/Test_Cases_Contact_Us_Edge_Boundary.csv)
 
     ---
 
