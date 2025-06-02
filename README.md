@@ -13,11 +13,11 @@ This repository showcases manual test documentation built against [https://autom
 This portfolio is structured to demonstrate a comprehensive manual Quality Assurance approach. Key deliverables include:
 
 ### 1. Test Plan Document
-* **Location:** [`Test_Plan/Test_Plan_AutomationExercise.md`](./Test_Plan/Test_Plan_AutomationExercise.md)
+* **Location:** [`test-plan.md`](https://github.com/QualitasPrima/manual-test-ecommerce-suites/blob/main/test-plan.md)
 * **Description:** A lightweight test plan outlining the scope, objectives, test strategy, and approach for testing core functionalities of Automation Exercise.
 
 ### 2. Detailed Test Cases
-* **Location:** `Test_Cases/` directory (categorized by module and scenario type)
+* **Location:** [`Test_Cases/` directory](https://github.com/QualitasPrima/manual-test-ecommerce-suites/tree/main/Test_Cases) (categorized by module and scenario type)
 * **Description:** A collection of meticulously crafted test cases in CSV format, covering various functionalities of the application. Each module's test cases are further broken down into:
     * **Positive Scenarios:** Validating expected system behavior with correct inputs.
     * **Negative Scenarios:** Testing the system's robustness and error handling with invalid or unexpected inputs.
@@ -47,8 +47,8 @@ This portfolio is structured to demonstrate a comprehensive manual Quality Assur
     ---
 
 ### 3. Mock Bug Reports
-* **Location:** [`Mock_Bug_Reports/`](./Mock_Bug_Reports/) directory
-* **Description:** Examples of detailed bug reports, demonstrating clear communication of defects, including steps to reproduce, expected vs. actual results, and relevant attachments.
+* **Location:** [`bug-report-example.md`](https://github.com/QualitasPrima/manual-test-ecommerce-suites/blob/main/bug-report-example.md)
+* **Description:** An example of a detailed bug report, demonstrating clear communication of a defect, including steps to reproduce, expected vs. actual results, and relevant attachments.
 
 ---
 
@@ -86,4 +86,4 @@ This manual testing suite lays a strong foundation. Future enhancements could in
 
 **David Jenkins (QualitasPrima)**
 Senior QA Engineer | Manual & Automation Testing | Agile | Cypress / Playwright
-[LinkedIn](https://linkedin.linkedin.com/in/davidjenkins-qa)
+[LinkedIn](https://www.linkedin.com/in/davidjenkins-qa/)
