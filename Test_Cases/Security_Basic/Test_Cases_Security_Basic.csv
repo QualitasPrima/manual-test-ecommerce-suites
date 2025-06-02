@@ -1,0 +1,17 @@
+Test Case ID,Feature,Test Case Name,Preconditions,Steps to Reproduce,Expected Result,Priority,Status (Mock),Notes
+TC_SEC_001,Input Validation (XSS),Reflected XSS via Search Bar,N/A,"1. Navigate to Home Page.
+2. Locate the Search Bar.
+3. Enter the following string into the search bar: `<script>alert('XSS Test')</script>`.
+4. Press Enter or click Search button.","No alert box should appear. The script should be sanitized or encoded, and the page should load normally without executing the JavaScript.",High,Pass,XSS: Reflected - Basic
+TC_SEC_002,Input Validation (SQLi),SQL Injection via Login Username Field,N/A,"1. Navigate to the Login page.
+2. In the 'Email Address' field, enter: `' OR 1=1 --`.
+3. In the 'Password' field, enter any valid password (e.g., 'password').
+4. Click 'Login'.",Login should fail. The system should not execute the SQL query or log in a user incorrectly. An error message indicating invalid credentials should appear.,High,Pass,SQLi: Basic Login Bypass
+TC_SEC_003,Authentication,Account Lockout After Multiple Failed Logins,N/A,"1. Identify an existing user account.
+2. Navigate to the Login page.
+3. Attempt to log in with the correct username but an incorrect password 5 times.
+4. Attempt to log in with the correct username and correct password on the 6th attempt.","After a predefined number of incorrect attempts (e.g., 3-5), the account should be temporarily locked, or a CAPTCHA should appear, preventing further login attempts. The 6th attempt should fail due to lockout.",Medium,Pass,Brute Force Protection
+TC_SEC_004,Authorization,Direct Access to Admin Panel (Unauthenticated),Logged out user,"1. Ensure you are logged out.
+2. In the browser's address bar, attempt to navigate to a potential admin URL (e.g., `https://automationexercise.com/admin` or `https://automationexercise.com/dashboard`).","The system should redirect to the login page or display an ""Access Denied"" message, preventing unauthenticated access to sensitive areas.",High,Pass,Broken Access Control: Unauthenticated
+TC_SEC_005,Error Handling,Information Disclosure in Error Messages,N/A,"1. Perform an action that is likely to cause an error (e.g., attempt to register with completely invalid data, or try to navigate to a non-existent URL like `https://automationexercise.com/nonexistent_page`).
+2. Observe any error messages displayed.","Error messages should be generic and user-friendly (e.g., 'An error occurred', 'Page not found'). They should not contain sensitive information like stack traces, server details, database errors, or internal paths.",Medium,Pass,Information Disclosure
