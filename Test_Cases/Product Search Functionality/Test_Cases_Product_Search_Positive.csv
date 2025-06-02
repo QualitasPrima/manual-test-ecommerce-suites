@@ -1,0 +1,10 @@
+Test Case ID,Feature,Test Case Name,Preconditions,Steps to Reproduce,Expected Result,Priority,Status (Mock),Notes
+TC_SEARCH_001,Search,Search for an existing product by exact full name,"Products exist (e.g., 'Blue Top').","1. Navigate to Home Page.
+2. Type 'Blue Top' into the search bar.
+3. Click the search icon.",SEARCHED PRODUCTS' title is displayed. Only 'Blue Top' product card is displayed in results.,High,Pass,Exact Match
+TC_SEARCH_002,Search,Search for an existing product by partial name,"Products exist (e.g., 'Dress').","1. Navigate to Home Page.
+2. Type 'Dress' into the search bar.
+3. Click the search icon.","SEARCHED PRODUCTS' title is displayed. All products containing 'Dress' in their name (e.g., 'Sleeveless Dress', 'Stylish Dress') are displayed.",Medium,Pass,Partial Match
+TC_SEARCH_003,Search,Search for a product (case-insensitive),Product 'Men Tshirt' exists.,"1. Navigate to Home Page.
+2. Type 'men tshirt' (lowercase) into the search bar. 
+3. Click the search icon.",SEARCHED PRODUCTS' title is displayed. 'Men Tshirt' is displayed.,Medium,Pass,Case Insensitivity
