@@ -1,0 +1,3 @@
+Test Case ID;Feature;Test Case Name;Preconditions;Steps to Reproduce;Expected Result;Priority;Status (Mock);Notes
+TC_SEARCH_004;Search;Search for a non-existent product;N/A;1. Navigate to Home Page. 2. Type 'XYZ NonExistent Product' into the search bar. 3. Click the search icon.;'SEARCHED PRODUCTS' title is displayed. Message 'No Results Found' or similar is displayed below the title.;High;Pass;No Match
+TC_SEARCH_005;Search;Search with special characters only;N/A;1. Navigate to Home Page. 2. Type '!@#$%^&*' into the search bar. 3. Click the search icon.;'SEARCHED PRODUCTS' title is displayed. Message 'No Results Found' or similar is displayed. System should not crash or display errors.;Medium;Pass;Invalid Characters
