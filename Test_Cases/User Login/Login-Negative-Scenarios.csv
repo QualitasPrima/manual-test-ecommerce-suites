@@ -1,0 +1,32 @@
+Test Case ID;Feature;Test Case Name;Preconditions;Steps to Reproduce;Expected Result;Priority;Status (Mock);Notes
+TC_LOGIN_N_001;User Login;Login - Invalid Email and/or Password;N/A;"1. Launch browser and navigate to 'https://magento.softwaretestingboard.com/'.
+2. Click on 'Sign In' link.
+3. In the 'Email' field, enter a non-existent email (e.g., `nonexistent@example.com`).
+4. In the 'Password' field, enter an incorrect password (e.g., `wrongpass`).
+5. Click the 'Sign In' button.
+6. Verify that the error message 'The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.' is displayed at the top of the login page.";Browser launches and navigates. Error message 'The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.' is displayed. User remains on the login page.;High;Not Executed;Tests general invalid credentials scenario.
+TC_LOGIN_N_002;User Login;Login - Missing Email;N/A;"1. Launch browser and navigate to 'https://magento.softwaretestingboard.com/'.
+2. Click on 'Sign In' link.
+3. Leave the 'Email' field blank.
+4. Enter a valid password (e.g., `Password123!`).
+5. Click the 'Sign In' button.
+6. Verify that the error message 'This is a required field.' is displayed under the Email field.";Browser launches and navigates. Error message 'This is a required field.' is displayed under the Email field. User remains on the login page.;High;Not Executed;Tests form validation for missing email.
+TC_LOGIN_N_003;User Login;Login - Missing Password;N/A;"1. Launch browser and navigate to 'https://magento.softwaretestingboard.com/'.
+2. Click on 'Sign In' link.
+3. Enter a valid email (e.g., `valid.user@example.com`).
+4. Leave the 'Password' field blank.
+5. Click the 'Sign In' button.
+6. Verify that the error message 'This is a required field.' is displayed under the Password field.";Browser launches and navigates. Error message 'This is a required field.' is displayed under the Password field. User remains on the login page.;High;Not Executed;Tests form validation for missing password.
+TC_LOGIN_N_004;User Login;Login - Invalid Email Format;N/A;"1. Launch browser and navigate to 'https://magento.softwaretestingboard.com/'.
+2. Click on 'Sign In' link.
+3. In the 'Email' field, enter an invalid email format (e.g., `invalid@test`, `test.com`).
+4. Enter a password.
+5. Click the 'Sign In' button.
+6. Verify that the error message 'Please enter a valid email address (Ex: johndoe@domain.com).' is displayed under the Email field.";Browser launches and navigates. Error message 'Please enter a valid email address (Ex: johndoe@domain.com).' is displayed under the Email field. User remains on the login page.;High;Not Executed;Tests email format validation on login.
+TC_LOGIN_N_005;User Login;Login - Account Locked (after multiple failed attempts);Pre-registered user (e.g., email: `locked.user@example.com`). The account must be configured to lock after 'X' failed attempts (check system config, typically 5-10).;"1. Launch browser and navigate to 'https://magento.softwaretestingboard.com/'.
+2. Click on 'Sign In' link.
+3. For the `locked.user@example.com` email, attempt to log in 'X' times with an incorrect password.
+4. On the 'X+1' attempt, click 'Sign In'.
+5. Verify that a specific 'account locked' message (e.g., 'You did not sign in correctly or your account is temporarily disabled.') or reCAPTCHA appears, preventing further login attempts.
+6. Try to log in again after a short period, if account lockout is temporary.
+7. Verify the lockout persists for the configured duration.";Browser launches and navigates. After 'X' failed attempts, the account is temporarily locked. A message indicating lockout is displayed. Further login attempts are prevented for the specified duration. User is NOT logged in.;Medium;Not Executed;Tests account lockout mechanism due to brute-force attempts. 'X' depends on site's security settings.

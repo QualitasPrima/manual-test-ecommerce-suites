@@ -1,0 +1,19 @@
+Test Case ID,Feature,Test Case Name,Preconditions,Steps to Reproduce,Expected Result,Priority,Status (Mock),Notes
+TC_LOGIN_P_001,User Login,Successful Login with Valid Credentials,"Pre-registered user (e.g., email: `valid.user@example.com`, password: `Password123!`). This user must exist on the system.","1. Launch browser and navigate to 'https://magento.softwaretestingboard.com/'.
+2. Click on 'Sign In' link in the header.
+3. Verify that the 'Customer Login' page is displayed.
+4. In the 'Email' field, enter a valid registered email address (e.g., `valid.user@example.com`).
+5. In the 'Password' field, enter the correct password (e.g., `Password123!`).
+6. Click the 'Sign In' button.
+7. Verify that the user is redirected to the Dashboard/Home page.
+8. Verify that the 'Welcome, [User's Full Name]!' message is displayed in the header.
+9. Verify that 'My Account' and 'Sign Out' links are visible in the header.","Browser launches and navigates to URL. 'Customer Login' page is displayed. Email and Password fields are filled. User is successfully logged in and redirected to the Dashboard/Home page. 'Welcome, [User's Full Name]!' message is displayed. 'My Account' and 'Sign Out' links are visible.",High,Not Executed,Core positive login flow. Ensure pre-registered user is available.
+TC_LOGIN_P_002,User Login,"Login - ""Remember Me"" Functionality","Pre-registered user (e.g., email: `remember.me@example.com`, password: `Password123!`).","1. Launch browser and navigate to 'https://magento.softwaretestingboard.com/'.
+2. Click on 'Sign In' link.
+3. Enter valid email and password.
+4. Check the 'Remember Me' checkbox (if available and functional, otherwise omit this step and note).
+5. Click 'Sign In'.
+6. Verify successful login.
+7. Close the browser.
+8. Re-launch the browser and navigate to 'https://magento.softwaretestingboard.com/'.
+9. Verify that the user is still logged in (e.g., 'Welcome, [User's Full Name]!' message is displayed).","Browser launches and navigates. User successfully logs in with 'Remember Me' checked. After closing and re-opening the browser, the user remains logged in on subsequent visits to the site.",Medium,Not Executed,Tests session persistence via 'Remember Me' functionality (requires browser restart for full validation).
