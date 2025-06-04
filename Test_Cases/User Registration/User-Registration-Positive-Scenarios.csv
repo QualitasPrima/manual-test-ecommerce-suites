@@ -1,0 +1,26 @@
+Test Case ID;Feature;Test Case Name;Preconditions;Steps to Reproduce;Expected Result;Priority;Status (Mock);Notes
+TC_REG_P_001;User Registration;Successful Account Creation - Full Flow;N/A;"1. Launch browser and navigate to 'https://magento.softwaretestingboard.com/'.
+2. Click on 'Create an Account' link in the header.
+3. Verify that the 'Create New Customer Account' page is displayed.
+4. In the 'Personal Information' section, enter a valid First Name (e.g., `TestFN`).
+5. Enter a valid Last Name (e.g., `TestLN`).
+7. In the 'Sign-in Information' section, enter a unique and valid Email Address (e.g., `testuser_[timestamp]@example.com`).
+8. Enter a strong Password (e.g., `Password@123`).
+9. Confirm the Password (e.g., `Password@123`).
+10. Click the 'Create an Account' button.
+11. Verify that the success message 'Thank you for registering with Luma.' is displayed.
+12. Verify that the user is automatically logged in (e.g., 'Welcome, TestFN TestLN!' message in the header).
+13. Verify that the 'My Account' link is visible in the header.
+14. Click 'Sign Out' link from the top right.
+15. Verify that the user is logged out (e.g., 'Sign In' and 'Create an Account' links are visible).";Browser launches and navigates to the URL. 'Create New Customer Account' page is loaded. All required fields (First Name, Last Name, Email, Password, Confirm Password) are filled with valid data. 'Sign Up for Newsletter' is optionally checked. Account is successfully created. Success message 'Thank you for registering with Luma.' is displayed. User is automatically logged in, confirmed by 'Welcome, TestFN TestLN!' message. 'My Account' link is visible. User is successfully signed out, confirmed by 'Sign In' and 'Create an Account' links visibility.;High;Not Executed;Covers positive full registration flow including immediate post-registration login/logout to ensure account functionality.
+TC_REG_P_002;User Registration;Successful Account Creation - Minimum Required Fields;N/A;"1. Launch browser and navigate to 'https://magento.softwaretestingboard.com/'.
+2. Click on 'Create an Account' link in the header.
+3. Verify that the 'Create New Customer Account' page is displayed.
+4. In the 'Personal Information' section, enter a valid First Name (e.g., `MinFN`).
+5. Enter a valid Last Name (e.g., `MinLN`).
+6. In the 'Sign-in Information' section, enter a unique and valid Email Address (e.g., `minuser_[timestamp]@example.com`).
+7. Enter a strong Password (e.g., `MinPass@1`).
+8. Confirm the Password (e.g., `MinPass@1`).
+9. Click the 'Create an Account' button.
+10. Verify that the success message 'Thank you for registering with Luma.' is displayed.
+11. Verify that the user is automatically logged in (e.g., 'Welcome, MinFN MinLN!' message in the header).";Browser launches and navigates to the URL. 'Create New Customer Account' page is loaded. Only minimum required fields (First Name, Last Name, Email, Password, Confirm Password) are filled with valid data. Account is successfully created. Success message 'Thank you for registering with Luma.' is displayed. User is automatically logged in, confirmed by 'Welcome, MinFN MinLN!' message.;Medium;Not Executed;Tests registration using only essential fields without optional selections.
