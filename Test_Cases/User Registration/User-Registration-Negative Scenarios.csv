@@ -1,0 +1,35 @@
+Test Case ID,Feature,Test Case Name,Preconditions,Steps to Reproduce,Expected Result,Priority,Status (Mock),Notes
+TC_REG_N_001,User Registration,Account Creation - Missing Required Fields,N/A,"1. Launch browser and navigate to 'https://magento.softwaretestingboard.com/'.
+2. Click on 'Create an Account' link in the header.
+3. On the 'Create New Customer Account' page, leave all required fields blank.
+4. Click the 'Create an Account' button.
+5. Verify that 'This is a required field.' error messages are displayed for: First Name, Last Name, Email, Password, and Confirm Password.","Create New Customer Account' page is loaded. Upon clicking 'Create an Account' with blank required fields, error messages 'This is a required field.' are displayed under each corresponding empty field. User is NOT registered.",High,Not Executed,Verifies basic form validation for empty required fields.
+TC_REG_N_002,User Registration,Account Creation - Invalid Email Format,N/A,"1. Launch browser and navigate to 'https://magento.softwaretestingboard.com/'.
+2. Click on 'Create an Account' link in the header.
+3. Fill valid First Name and Last Name.
+4. In the 'Email address' field, enter an invalid email format (e.g., `test@test`, `test.com`, `test@`).
+5. Fill valid Password and Confirm Password.
+6. Click the 'Create an Account' button.
+7. Verify that 'Please enter a valid email address (Ex: johndoe@domain.com).' error message is displayed under the email field.","Create New Customer Account' page is loaded. Upon entering an invalid email format, the error message 'Please enter a valid email address (Ex: johndoe@domain.com).' is displayed under the email field. User is NOT registered.",High,Not Executed,"Tests email format validation, ensuring proper error message for invalid inputs."
+TC_REG_N_003,User Registration,Account Creation - Existing Email Address,"Existing registered user (e.g., email: `existinguser@example.com`, password: `Password123!`). This user must exist on the system.","1. Launch browser and navigate to 'https://magento.softwaretestingboard.com/'.
+2. Click on 'Create an Account' link in the header.
+3. Fill valid First Name and Last Name.
+4. In the 'Email address' field, enter an already registered email address (e.g., `existinguser@example.com`).
+5. Fill valid Password and Confirm Password.
+6. Click the 'Create an Account' button.
+7. Verify that the error message 'There is already an account with this email address. If you are sure that it is your email address, click here to get your password and access your account.' is displayed at the top of the page.","Create New Customer Account' page is loaded. Upon attempting to register with an existing email, the error message 'There is already an account with this email address. If you are sure that it is your email address, click here to get your password and access your account.' is displayed. User is NOT registered.",High,Not Executed,"Verifies system's handling of duplicate email registrations, ensuring account uniqueness."
+TC_REG_N_004,User Registration,Account Creation - Mismatched Passwords,N/A,"1. Launch browser and navigate to 'https://magento.softwaretestingboard.com/'.
+2. Click on 'Create an Account' link in the header.
+3. Fill valid First Name, Last Name, and Email Address.
+4. In the 'Password' field, enter a password (e.g., `Password@123`).
+5. In the 'Confirm Password' field, enter a different password (e.g., `Password@456`).
+6. Click the 'Create an Account' button.
+7. Verify that 'Please enter the same value again.' error message is displayed under the 'Confirm Password' field.","Create New Customer Account' page is loaded. Upon entering mismatched passwords, the error message 'Please enter the same value again.' is displayed under the 'Confirm Password' field. User is NOT registered.",High,Not Executed,Tests password confirmation validation.
+TC_REG_N_005,User Registration,Account Creation - Weak Password,N/A,"1. Launch browser and navigate to 'https://magento.softwaretestingboard.com/'.
+2. Click on 'Create an Account' link in the header.
+3. Fill valid First Name, Last Name, and Email Address.
+4. In the 'Password' field, enter a weak password (e.g., `pass`).
+5. Confirm the password (e.g., `pass`).
+6. Click the 'Create an Account' button.
+7. Verify that the password strength meter shows 'Weak'.
+8. Verify that the error message 'Minimum length of this field must be 8. Common passwords are easy to guess. Try including numbers, symbols, and mixed-case letters.' or similar is displayed under the password field.","Create New Customer Account' page is loaded. Upon entering a weak password, the password strength meter indicates 'Weak' (or corresponding visual feedback). An error message (e.g., 'Minimum length of this field must be 8. Common passwords are easy to guess. Try including numbers, symbols, and mixed-case letters.') is displayed under the password field. User is NOT registered.",High,Not Executed,"Verifies password strength enforcement (e.g., minimum length, character types)."
