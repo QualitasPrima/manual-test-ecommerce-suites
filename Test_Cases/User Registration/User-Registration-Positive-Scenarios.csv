@@ -1,5 +1,6 @@
 Test Case ID,Feature,Test Case Name,Preconditions,Steps to Reproduce,Expected Result,Priority,Status (Mock),Notes
-TC_REG_P_001,User Registration,Successful Account Creation - Full Flow,N/A,"1. Launch browser and navigate to 'https://magento.softwaretestingboard.com/'.
+TC_REG_P_001,User Registration,Successful Account Creation - Full Flow,N/A,"
+1. Launch browser and navigate to 'https://magento.softwaretestingboard.com/'.
 2. Click on 'Create an Account' link in the header.
 3. Verify that the 'Create New Customer Account' page is displayed.
 4. In the 'Personal Information' section, enter a valid First Name (e.g., `TestFN`).
