@@ -1,0 +1,24 @@
+Test Case ID,Feature,Test Case Name,Preconditions,Steps to Reproduce,Expected Result,Priority,Status (Mock),Notes
+TC_REG_E_001,User Registration,Account Creation - Max Length First/Last Name,N/A,"1. Launch browser and navigate to 'https://magento.softwaretestingboard.com/'.
+2. Click on 'Create an Account' link in the header.
+3. In 'First Name' and 'Last Name', enter values at the maximum allowed length (e.g., 255 characters or observed UI limit).
+4. Fill valid Email, Password, and Confirm Password.
+5. Click 'Create an Account' button.
+6. Verify that the account is created successfully (e.g., 'Thank you for registering with Luma.').
+7. Verify that the full First Name and Last Name are displayed correctly in the welcome message.","Create New Customer Account' page is loaded. First Name and Last Name fields accept maximum length inputs. Account is created successfully. The full, long First Name and Last Name are displayed correctly in the welcome message or account details.",Medium,Not Executed,Tests handling of maximum length inputs for name fields without truncation or errors.
+TC_REG_E_002,User Registration,Account Creation - Trailing/Leading Spaces in Fields,N/A,"1. Launch browser and navigate to 'https://magento.softwaretestingboard.com/'.
+2. Click on 'Create an Account' link in the header.
+3. Enter First Name with leading/trailing spaces (e.g., '  TestFN  ').
+4. Enter Last Name with leading/trailing spaces (e.g., '  TestLN  ').
+5. Enter a unique and valid Email Address (e.g., `spacesuser_[timestamp]@example.com`).
+6. Enter a strong Password.
+7. Confirm the Password.
+8. Click 'Create an Account' button.
+9. Verify that the account is created successfully (e.g., 'Thank you for registering with Luma.').
+10. Verify that the welcome message displays the First Name and Last Name *without* leading/trailing spaces (e.g., 'Welcome, TestFN TestLN!').","Create New Customer Account' page is loaded. All fields are filled. Account is created successfully. Leading/trailing spaces are trimmed from First Name and Last Name upon display (expected behavior in most applications), ensuring clean data storage and display.",Medium,Not Executed,Tests if leading/trailing spaces in name fields are handled (trimmed) correctly upon submission.
+TC_REG_E_003,User Registration,Account Creation - Missing Required First/Last Name on Submission,N/A,"1. Launch browser and navigate to 'https://magento.softwaretestingboard.com/'.
+2. Click on 'Create an Account' link in the header.
+3. **Leave 'First Name' and 'Last Name' fields empty.**
+4. Fill valid Email, Password, Confirm Password.
+5. Click the 'Create an Account' button.
+6. Verify 'This is a required field.' error messages are displayed for First Name and Last Name.",Create New Customer Account' page is loaded. User attempts to create account with empty First Name and Last Name. Error messages 'This is a required field.' are displayed for First Name and Last Name. User is NOT registered.,Medium,Not Executed,"Tests form validation when crucial initial required fields (First/Last Name) are left empty while later fields are filled, ensuring validation triggers upon submission."
