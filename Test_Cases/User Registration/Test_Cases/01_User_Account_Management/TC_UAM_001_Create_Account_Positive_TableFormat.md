@@ -1,9 +1,9 @@
 # Test Case: TC_UAM_001 - Create Account - Positive Scenario
 
-**Module:** User Account Management
-**Feature:** Create Account
-**Objective:** Verify that a new user can successfully create an account with valid credentials.
-**Priority:** Critical
+* **Module:** User Account Management
+* **Feature:** Create Account
+* **Objective:** Verify that a new user can successfully create an account with valid credentials.
+* **Priority:** Critical
 
 **Preconditions:**
 1.  User is not logged in.
